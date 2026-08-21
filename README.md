@@ -1,9 +1,12 @@
 # Basic Employee Onboarding (AD)(RBAC)
 
 ## Problem Statement
+* Northstar Medical is a fictional, fast-growing company that outsources its IT management to a third party called MSP. MSP relies on manual processes, and Northstar Medical has no Role-Based Access Control (RBAC) policy in place, creating potential HIPAA compliance and security risks. Initially, IT management appeared to work well, but as the company grew, access-control problems began to emerge. For example, a newly hired HR payroll specialist could log into the system but could not access the HR resources required to perform her job. This situation demonstrated the need for proper RBAC policies to ensure employees have appropriate access based on their job responsibilities.
 [Provide 3 to 5 sentences describing what was broken at Northstar Medical Group. Mention the MSP mismanagement, lack of structure, manual processes, and HIPAA risks that existed before your project.]
 
 ## Solution Overview
+* The solution is to build a structured Active Directory environment with OUs and security groups structure that separate employees based on their roles and responsibilities. I identified that the HR payroll specialist had been placed in the wrong OU, moved her to the correct OU, and updated the related security policies. I created security groups and implemented a RBAC model that ensures users receive access based only on their assigned roles. I also built an employee onboarding pipeline in Active Directory to standardize and secure user provisioning. This approach reduced manual errors, enforced least-privilege access, and ensured employees received only the resources required to perform their jobs.
+
 [Provide 4 to 6 sentences describing what you built and how it solved the problem. Cover the new domain creation, the structural OU design, the security groups, the flat RBAC model, and how user provisioning was secured.]
 
 ## Video Walkthrough
